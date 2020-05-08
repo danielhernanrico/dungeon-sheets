@@ -5,6 +5,10 @@ sheet by running ``makesheets`` from the command line.
 
 """
 
+# To prevent the creation of .pyc files in the sheet.
+from sys import dont_write_bytecode
+dont_write_bytecode = True
+
 dungeonsheets_version = "{{ char.dungeonsheets_version }}"
 
 name = "{{ char.name }}"
